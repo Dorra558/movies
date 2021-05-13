@@ -1,8 +1,9 @@
 import React from 'react'
 import {Navbar,Nav,Form,FormControl, Container}from 'react-bootstrap'
 import '../App.css'
+import { Link } from "react-router-dom";
 
-function Navigation() {
+function Navigation({handleChange}) {
     return (
         <div>
             <Navbar className="navbarr py-2" fixed="top" expand="lg">
@@ -12,14 +13,13 @@ function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="mx-auto">
-                    <Nav.Link href="#home" className="navig">Home</Nav.Link>
-                    <Nav.Link href="#link" className="navig">TvShows</Nav.Link>
-                    <Nav.Link href="#link" className="navig">Movies</Nav.Link>
+                      <Link to="/"  className="navig">Home</Link>
+                      <Link to="/about" className="navig px-3">About Us</Link>
+                      <Link to="/movies" className="navig">Movies</Link>
                     </Nav>
+                    
                     <form class="search-box">
-                      <i class="fas fa-search text-white iconNav"></i>
-                      <input type="text" placeholder=" "/>
-                      <button type="reset"></button>
+                      <input type="text" placeholder="Search your movies.." onChange={handleChange  } />
                     </form>
                   
                     <i class="fas fa-heart text-white iconNav mx-4"></i>
