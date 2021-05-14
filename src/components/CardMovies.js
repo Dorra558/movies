@@ -1,17 +1,19 @@
 import React, {useState,useEffect}from 'react'
 import {Card, Button, Row, Col} from 'react-bootstrap'
-function CardMovies({search}) {
-    const [movie, setMovie] = useState([])
-    const getMovie = ()=>{
-      fetch('movies.json').then(
-            response => response.json()).then 
-                     (films => setMovie(films));
-    }
+import Rater from 'react-rater'
+import 'react-rater/lib/react-rater.css'
+function CardMovies({search, movie,getFavorites,addFavorite}) {
+    // const [movie, setMovie] = useState([])
+    // const getMovie = ()=>{
+    //   fetch('movies.json').then(
+    //         response => response.json()).then 
+    //                  (films => setMovie(films));
+    // }
     
-    useEffect(()=> {getMovie()
-    },[])
+    // useEffect(()=> {getMovie()
+    // },[])
   
-    console.log(movie) 
+    // console.log(movie) 
   
     return(
 
@@ -26,9 +28,9 @@ function CardMovies({search}) {
         <div>
           <Row>
              <Col md={4}>
-              <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={el.posterUrl}/>
-                  <Card.ImgOverlay>
+              <Card className="CardMov my-3" style={{ width: '16rem'}}>
+                  <Card.Img variant="top" className="w-100 imagCard" src={el.posterUrl}/>
+                  {/* <Card.ImgOverlay className="overlayImg">
                     <Card.Title className="text-danger">{el.title}</Card.Title>
                     <Card.Text className="text-danger">
                       {el.year}
@@ -36,9 +38,13 @@ function CardMovies({search}) {
                     <Card.Text className="text-white">
                       {el.plot}
                     </Card.Text>
-                  </Card.ImgOverlay>
+                  </Card.ImgOverlay> */}
                   <Card.Body>
-                    <Button variant="primary">Watch Now</Button>
+                    <div className="d-flex justify-content-between pb-2">
+                      <Rater total={5} rating={el.rating} />
+                     <div onClick={()=>{getFavorites();addFavorite(el)}}><i class="far fa-heart"></i></div>
+                    </div>
+                    <Button variant="primary" className="btnWatch">Watch Now <i className="ml-2 fas fa-play-circle"></i></Button>
                   </Card.Body>
                 </Card>
              </Col>

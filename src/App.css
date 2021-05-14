@@ -93,6 +93,25 @@ body {
     margin-top: 100px;
 }
 
+.imagCard {
+    height: 320px;
+}
+
+.btnWatch {
+    background-color: #e94d60 !important;
+    border-radius: 0% !important;
+    border: #e94d60 !important;
+}
+
+.overlayImg {
+    display: none;
+}
+
+.CardMov:hover .overlayImg {
+    display: block;
+    cursor: pointer;
+}
+
 
 /* *****footer************* */
 

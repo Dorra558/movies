@@ -3,7 +3,7 @@ import {Navbar,Nav,Form,FormControl, Container}from 'react-bootstrap'
 import '../App.css'
 import { Link } from "react-router-dom";
 
-function Navigation({handleChange}) {
+function Navigation({handleChange, favorites}) {
     return (
         <div>
             <Navbar className="navbarr py-2" fixed="top" expand="lg">
@@ -22,7 +22,7 @@ function Navigation({handleChange}) {
                       <input type="text" placeholder="Search your movies.." onChange={handleChange  } />
                     </form>
                   
-                    <i class="fas fa-heart text-white iconNav mx-4"></i>
+                    <Link to="/favorit"><i class="fas fa-heart text-white iconNav "></i><span class="badge bg-danger rounded-circle mr-4" id="val">{favorites}</span></Link>
                     <i class="fas fa-user text-white iconNav"></i>
                 </Navbar.Collapse>
               </Container>

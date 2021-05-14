@@ -7,7 +7,7 @@ import Footer from './footer'
 import React, {useState} from 'react'
 
 
-function Home () {
+function Home ({movie,favorites,getFavorites, addFavorite}) {
 const [search,setSearch ] = useState("") 
 const handleChange= (e)=>{
   setSearch(e.target.value)
@@ -15,7 +15,7 @@ const handleChange= (e)=>{
 
   return (
     <div className="App">
-    <Navigation handleChange={handleChange} />
+    <Navigation handleChange={handleChange} favorites={favorites} />
     <div className="back my-5">
       <h1 className="container titre text-white">Unlimited movies, TV shows, <br/> and more.</h1>
    <div className=" container d-flex justify-content-start"><span className="text-center  titre2 text-white p-1 mt-4">Watch anywhere. Cancel anytime.</span></div>
@@ -39,7 +39,7 @@ const handleChange= (e)=>{
 
     <div className="py-5">
       <Container className="d-flex flex-wrap justify-content-around">
-          < CardMovies search={search}/>
+          < CardMovies search={search} movie={movie} favorites={favorites} getFavorites={getFavorites} addFavorite={addFavorite}/>
       </Container>
     </div>
 <div>
