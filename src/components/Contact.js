@@ -2,13 +2,13 @@ import React from 'react'
 import Navigation from './Navigation'
 
 
-function About() {
+function Contact() {
     return (
         <div>
             <Navigation />
-            <h1 className="LargeTitle">Hello to page about</h1>
+            <h1 className="text-white LargeTitle">Hello to page contact</h1>
         </div>
     )
 }
 
-export default About
+export default Contact

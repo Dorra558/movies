@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar,Nav,Form,FormControl, Container}from 'react-bootstrap'
+import {Navbar,Nav, Container}from 'react-bootstrap'
 import '../App.css'
 import { Link } from "react-router-dom";
 
@@ -14,12 +14,13 @@ function Navigation({handleChange, favorites}) {
 
                     <Nav className="mx-auto">
                       <Link to="/"  className="navig">Home</Link>
-                      <Link to="/about" className="navig px-3">About Us</Link>
-                      <Link to="/movies" className="navig">Movies</Link>
+                      <Link to="/movies" className=" px-3 navig">Movies</Link>
+                      <Link to="/contact" className="navig ">Contact Us</Link>
+                  
                     </Nav>
                     
-                    <form class="search-box">
-                      <input type="text" placeholder="Search your movies.." onChange={handleChange  } />
+                    <form className="search-box mr-2">
+                      <input type="text" placeholder="Search your movies... &#61442;" onChange={handleChange}/> 
                     </form>
                   
                     <Link to="/favorit"><i class="fas fa-heart text-white iconNav "></i><span class="badge bg-danger rounded-circle mr-4" id="val">{favorites}</span></Link>

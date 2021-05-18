@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from './components/Home'
 import Movies from './components/Movies'
-import About from './components/About'
+import Contact from './components/Contact'
 import Favorit from './components/favorit'
 import React, {useState,useEffect} from 'react'
 
@@ -37,9 +37,9 @@ function App() {
     <BrowserRouter>
       
         <Route exact path="/"> <Home movie={movie} getMovie={getMovie} favorites={favorites} getFavorites={getFavorites} addFavorite={addFavorite} /></Route>
-        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
         <Route path="/movies" component={Movies} />
-        <Route path="/favorit" ><Favorit movie={movie} getMovie={getMovie} favorites={favorites}/></Route>
+        <Route path="/favorit" ><Favorit movie={movie} getMovie={getMovie} favorites={favorites} favoriteMovie={favoriteMovie}/></Route>
        
     </BrowserRouter>
 

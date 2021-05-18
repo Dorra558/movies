@@ -39,7 +39,7 @@ const handleChange= (e)=>{
 
     <div className="py-5">
       <Container className="d-flex flex-wrap justify-content-around">
-          < CardMovies search={search} movie={movie} favorites={favorites} getFavorites={getFavorites} addFavorite={addFavorite}/>
+          <CardMovies search={search} movie={movie} favorites={favorites} getFavorites={getFavorites} addFavorite={addFavorite}/>
       </Container>
     </div>
 <div>

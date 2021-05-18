@@ -136,6 +136,53 @@
          "actors": "François Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot",
          "plot": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
          "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_.jpg"
+     },
+     {
+         "id": 10,
+         "title": "Stardust",
+         "year": "2007",
+         "rating": 3.5,
+         "runtime": "127",
+         "genres": [
+             "Adventure",
+             "Family",
+             "Fantasy"
+         ],
+         "director": "Matthew Vaughn",
+         "actors": "Ian McKellen, Bimbo Hart, Alastair MacIntosh, David Kelly",
+         "plot": "In a countryside town bordering on a magical land, a young man makes a promise to his beloved that he'll retrieve a fallen star by venturing into the magical realm.",
+         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjkyMTE1OTYwNF5BMl5BanBnXkFtZTcwMDIxODYzMw@@._V1_SX300.jpg"
+     },
+     {
+         "id": 11,
+         "title": "Apocalypto",
+         "year": "2006",
+         "rating": 4.5,
+         "runtime": "139",
+         "genres": [
+             "Action",
+             "Adventure",
+             "Drama"
+         ],
+         "director": "Mel Gibson",
+         "actors": "Rudy Youngblood, Dalia Hernández, Jonathan Brewer, Morris Birdyellowhead",
+         "plot": "As the Mayan kingdom faces its decline, the rulers insist the key to prosperity is to build more temples and offer human sacrifices. Jaguar Paw, a young man captured for sacrifice, flees to avoid his fate.",
+         "posterUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTM1NjYyNTY5OV5BMl5BanBnXkFtZTcwMjgwNTMzMQ@@._V1_SX300.jpg"
+     },
+     {
+         "id": 12,
+         "title": "Taxi Driver",
+         "year": "1976",
+         "rating": 4,
+         "runtime": "113",
+         "genres": [
+             "Crime",
+             "Drama"
+         ],
+         "director": "Martin Scorsese",
+         "actors": "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito",
+         "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
+         "posterUrl": "https://media.senscritique.com/media/000012416763/source_big/Taxi_Driver.jpg"
      }
 
  ]
